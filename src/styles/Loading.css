@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Formula Condensed1';
+    src: url('transfonter.org-20241121-104843/FormulaCondensed-Light.woff2') format('woff2'),
+      url('transfonter.org-20241121-104843/FormulaCondensed-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Formula Condensed';
+    src: url('transfonter.org-20241121-104843/FormulaCondensed-Bold.woff2') format('woff2'),
+      url('transfonter.org-20241121-104843/FormulaCondensed-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Formula Condensed1', sans-serif;
+  }
+  
+  .container {
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+  }
+  
+  .logo {
+    font-size: 90px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .counter {
+    font-family: 'Formula Condensed1';
+    font-size: 90px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    animation: pulse 1.5s infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 0.4;
+    }
+    50% {
+      opacity: 0.9;
+    }
+  }
+  
+  .outer_porg {
+    position: relative;
+    margin-top: 100px;
+    max-width: 600px;
+    margin: auto;
+    border: 2px solid #000;
+    height: 80px;  /* Set a fixed height for the progress bar */
+    overflow: hidden;
+    border-radius: 5px;  /* Add rounded corners to the border */
+  }
+  
+  .scrolling-image {
+    position: absolute;
+    top: 0;
+    left: 0;  /* Start from the left */
+    width: 0%;  /* Start with zero width */
+    height: 100%;
+    transition: width 0.3s linear;  /* Smooth transition for filling */
+  }
+  
+  img#scrolling-image {
+    width: 100%;  /* Ensure the image fills the progress container */
+  }
+  
+  .bubble {
+    display: none;
+  }
+  
